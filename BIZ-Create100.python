@@ -1,0 +1,52 @@
+#!/usr/bin/python
+  
+import sys
+import requests
+import json
+import datetime
+
+#Open the error file in read more
+currentDT = datetime.datetime.now()
+print(currentDT)
+usrCurrentDate=currentDT.strftime("%Y-%m-%d")
+#print("/home/appadmin/JIRAAhaVersionSync/Errorlog_"+usrCurrentDate+".txt")
+directoryUrl = "/home/appadmin/JIRAAhaVersionSync/"
+f= open(directoryUrl+'Errorlog_'+usrCurrentDate+".txt","r")
+if f.mode == 'r':
+    contents =f.read()
+print(contents)
+jira_url ="https://jiratest/"
+jira_login="ulti"
+jira_password="quiznos"
+
+#Creating Jira issue for the failed processing
+createURL =  jira_url+"rest/api/2/issue"
+data = {"fields": {"project":{"id":"10890"},"issuetype":{"id":"178"},"summary":"Aha Version Sync Error","description":contents,"customfield_12924":[{"id":"106006"}],"customfield_10502": {"name": "ulti"},"reporter": {"name": "admin"}}}
+headers = {'Content-type': 'application/json'}
+r = requests.post(createURL, data=json.dumps(data), headers=headers, auth=(jira_login,jira_password), verify=False)
+data= r.json()
+id = data.get('id')
+print(data)
+
+#Transitioning JIRA to input status
+transititionURL = jira_url+"rest/api/2/issue/"+id+"/transitions"
+data1 = {"transition":{"id":"21"}}
+r = requests.post(transititionURL, data=json.dumps(data1), headers=headers, auth=(jira_login,jira_password), verify=False)
+print(data1)
+print(r.text)
+
+
+#Adding Error log to the JIRA
+attachmentURL =  jira_url+"rest/api/2/issue/"+id+"/attachments"
+files = {'file': open(directoryUrl+'Errorlog_'+usrCurrentDate+".txt", 'rb')}
+headers = {"X-Atlassian-Token": "nocheck"}
+r = requests.post(attachmentURL, auth=(jira_login,jira_password),files=files,headers=headers,verify=False)
+
+#Adding main log to the JIRA
+files = {'file': open(directoryUrl+'log_'+usrCurrentDate+".txt", 'rb')}
+r = requests.post(attachmentURL, auth=(jira_login,jira_password),files=files,headers=headers,verify=False)
+#Adding Aha Release CSV to the JIRA
+files = {'file': open(directoryUrl+'aha_releases.csv', 'rb')}
+r = requests.post(attachmentURL, auth=(jira_login,jira_password),files=files,headers=headers,verify=False)
+
+

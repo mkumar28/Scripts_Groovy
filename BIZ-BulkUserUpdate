@@ -1,0 +1,13 @@
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.crowd.embedded.api.Group
+import com.atlassian.jira.user.ApplicationUser;
+
+
+def groupManager = ComponentAccessor.getGroupManager()
+def userUtil = ComponentAccessor.getUserUtil()
+
+List appusers = (List)groupManager.getDirectUsersInGroup(groupManager.getGroup("jira-users"))
+Group gp = groupManager.getGroup("Ultimate Software")
+ApplicationUser user = appusers.get(1)
+def userName = user.getUsername()
+userUtil.addUserToGroup(gp, user)//For JIRA v7

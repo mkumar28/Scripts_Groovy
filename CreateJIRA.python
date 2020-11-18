@@ -1,0 +1,6 @@
+import sys
+import requests
+
+
+//Open the
+f= open("guru99.txt","r")

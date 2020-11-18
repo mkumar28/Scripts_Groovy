@@ -1,0 +1,84 @@
+2020-01-19
+Total number of calls from Johnny
+674877
+Total number of api calls from Johnny
+624209
+ 
+2020-01-18
+Total number of calls from Johnny
+37315
+Total number of api calls from Johnny
+25481
+ 
+2020-01-17
+Total number of calls from Johnny
+624756
+Total number of api calls from Johnny
+567090
+ 
+2020-01-16
+Total number of calls from Johnny
+596476
+Total number of api calls from Johnny
+547211
+ 
+2020-01-15
+Total number of calls from Johnny
+571279
+Total number of api calls from Johnny
+524665
+ 
+2020-01-14
+Total number of calls from Johnny
+27288
+Total number of api calls from Johnny
+17404
+ 
+2020-01-13
+Total number of calls from Johnny
+52822
+Total number of api calls from Johnny
+48397
+ 
+2020-01-12
+Total number of calls from Johnny
+499128
+Total number of api calls from Johnny
+463790
+ 
+2020-01-11
+Total number of calls from Johnny
+511643
+Total number of api calls from Johnny
+502894
+ 
+2020-01-10
+Total number of calls from Johnny
+232263
+Total number of api calls from Johnny
+213408
+ 
+2020-01-09
+Total number of calls from Johnny
+646433
+Total number of api calls from Johnny
+592087
+ 
+2020-01-08
+Total number of calls from Johnny
+655765
+Total number of api calls from Johnny
+615625
+ 
+2020-01-07
+Total number of calls from Johnny
+636994
+Total number of api calls from Johnny
+598385
+ 
+2020-01-06
+Total number of calls from Johnny
+591816
+Total number of api calls from Johnny
+549593
+ 

@@ -1,0 +1,31 @@
+curl -k -X GET 'https://ultidev/rest/scriptrunner/latest/user/exec/' -H 'X-Atlassian-token: no-check' -u 'manishk:sonuSHWETA@200688' --data-binary $'{"scriptText":"import com.atlassian.jira.component.ComponentAccessor\\nimport com.atlassian.jira.task.TaskManagerImpl\\n \\nList<String> queue = new ArrayList<String>()\\ndef TaskManager = ComponentAccessor.getComponent(TaskManagerImpl)\\ndef tasks = TaskManager.getLiveTasks()\\n\\n \\nfor(key in tasks){\\n    if( key.getStartedTimestamp() == null){\\n    queue.add(\'Taskid: \' + key.getTaskId() + \' Description: \' + key.getDescription() + \' Start Time:\' + key.getStartedTimestamp() + \' Username: \' + key.getUserName()+\'Finished:\'+ key.getResult())\\n    }\\n}\\nqueue","scriptFile":"","lockedTab":"scriptText","expandRight":true}' --compressed
+
+
+curl -k 'https://fl1csjira03/rest/scriptrunner/latest/user/exec/' -u 'manishk:sonuSHWETA@200688' -H 'Content-Type: application/json' -d $'{"scriptText":"import com.atlassian.jira.component.ComponentAccessor\\nimport com.atlassian.jira.task.TaskManagerImpl\\n \\nList<String> queue = new ArrayList<String>()\\ndef TaskManager = ComponentAccessor.getComponent(TaskManagerImpl)\\ndef tasks = TaskManager.getLiveTasks()\\n\\n \\nfor(key in tasks){\\n    if( key.getStartedTimestamp() != null){\\n    queue.add(\'Taskid: \' + key.getTaskId() + \' Description: \' + key.getDescription() + \' Start Time:\' + key.getStartedTimestamp() + \' Username: \' + key.getUserName()+\'Finished:\'+ key.getResult())\\n    }\\n}\\nqueue"}' --compresse
+
+
+
+
+ curl -k 'https://fl1cpjira05/rest/scriptrunner/latest/user/exec/' -u 'manishk:sonuSHWETA@200688' -H 'Content-Type: application/json'  -d $'{"scriptText":"import com.atlassian.jira.component.ComponentAccessor\\nimport com.atlassian.jira.task.TaskManagerImpl\\n  \\nList<String> queue = new ArrayList<String>()\\ndef TaskManager = ComponentAccessor.getComponent(TaskManagerImpl)\\ndef tasks = TaskManager.getLiveTasks()\\n\\n \\nfor(key in tasks){\\n    if( key.getStartedTimestamp() == null){\\n    queue.add(\'Taskid: \' + key.getTaskId() + \' Description: \' + key.getDescription() + \' Start Time:\' + key.getStartedTimestamp() + \' Username: \' + key.getUserName()+\'Finished:\'+ key.getResult())\\n    }\\n}\\nqueue"}' 
+
+
+ curl -k 'https://fl1cpjira05/rest/scriptrunner/latest/user/exec/' -u 'manishk:sonuSHWETA@200688' -H 'Content-Type: application/json' -d  $'{"scriptText":"import com.atlassian.jira.component.ComponentAccessor\\nimport com.atlassian.jira.task.TaskManagerImpl\\n \\nList<String> queue = new ArrayList<String>() \\ndef TaskManager = ComponentAccessor.getComponent(TaskManagerImpl)\\ndef tasks = TaskManager.getLiveTasks()\\n\\n \\nfor(key in tasks){\\nif( key.getStartedTimestamp() == null){ }}"}' |jq '.value.output'
+ 
+curl -k -g https://fl1cpjira05/rest/scriptrunner/latest/user/exec/ -u manishk:sonuSHWETA@200688 -H Content-Type:application/json -d $'{"scriptText":"import com.atlassian.jira.component.ComponentAccessor"}'
+
+
+#!/bin/sh
+rm -rf ~/Lexorank_Error/Error.txt
+~/Lexorank_Error/./lexorank_error_fetch.py >> ~/Lexorank_Error/Error.txt
+if [ -s ~/Lexorank_Error/Error.txt ]
+then
+  rm -rf ~/Lexorank_Error/Error_Mail.txt
+  echo "Subject: Lexo Rank Error" > ~/Lexorank_Error/Error_Mail.txt
+  cat ~/Lexorank_Error/Error.txt >> ~/Lexorank_Error/Error_Mail.txt
+  /usr/sbin/ssmtp JIRA_admins@ultimatesoftware.com < ~/Lexorank_Error/Error_Mail.txt
+else
+  echo "No Error"
+fi
+
+
+{"output":"[Taskid: 153410 Description: Clone issue ULTI-410246 Start Time:null Username: patrickmcFinished:null, Taskid: 153413 Description: Transitioning 3 issues Start Time:null Username: cesardFinished:null, Taskid: 153419 Description: Transitioning 1,000 issues Start Time:null Username: kaiwentFinished:null, Taskid: 153425 Description: Clone issue ULTI-410227 Start Time:null Username: kathywFinished:null, Taskid: 153444 Description: Clone issue SD-4046102 Start Time:null Username: mikewFinished:null, Taskid: 153453 Description: Clone issue EMT-94937 Start Time:null Username: shawnalFinished:null, Taskid: 153457 Description: Clone issue BIZ-33141 Start Time:null Username: michaeladFinished:null, Taskid: 153496 Description: Clone issue ULTI-408469 Start Time:null Username: dillongFinished:null, Taskid: 153722 Description: Clone issue SD-4631556 Start Time:null Username: richardaFinished:null]","snapshot":{"created":1576264583013,"log":null,"millisecondsTaken":72,"key":"script-console","exception":null,"exceptionObject":null,"payload":"{}","cpuTime":59446271}}

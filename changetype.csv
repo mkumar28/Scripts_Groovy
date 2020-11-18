@@ -1,0 +1,230 @@
+Change_Type,Issue_Type
+None,Change Board Submittal
+None,Product Release
+Custom - Patch,Product Release
+Custom - Upgrade,Product Release
+Deploy - Application Upgrade,Product Release
+Deploy - eModule,Product Release
+Deploy - Quarterly Updates,Product Release
+Deploy - Software Patch,Product Release
+Deploy - Year-End Tax Updat,Product Release
+Access Management - Group Policy Add/Delete/Modify,Change Board Submittal
+Access Management - Login script changes,Change Board Submittal
+Access Management - Modify Group Membership,Change Board Submittal
+Access Management - non-standard,Change Board Submittal
+Activations - Cognos,Change Board Submittal
+Activations - Core,Change Board Submittal
+Activations - Customer Move,Change Board Submittal
+Activations - Data Restore,Change Board Submittal
+Activations - Decom Core,Change Board Submittal
+Activations - Decom ONB,Change Board Submittal
+Activations - Decom REC,Change Board Submittal
+Activations - Decom UTA,Change Board Submittal
+Activations - Decom UTM/UET,Change Board Submittal
+Activations - Decommission,Change Board Submittal
+Activations - Disable,Change Board Submittal
+Activations - Implementation,Change Board Submittal
+Activations - Integration,Change Board Submittal
+Activations - Multiple Customer Moves,Change Board Submittal
+Activations - Network - URL Creation,Change Board Submittal
+Activations - Network - VPN Change,Change Board Submittal
+Activations - Network - VPN IP Add,Change Board Submittal
+Activations - non-standard,Change Board Submittal
+Activations - ONB,Change Board Submittal
+Activations - ONBV14,Change Board Submittal
+Activations - Perception,Change Board Submittal
+Activations - RECV10,Change Board Submittal
+Activations - RECV14,Change Board Submittal
+Activations - SSO,Change Board Submittal
+Activations - TEST - Cognos,Change Board Submittal
+Activations - TEST - Core,Change Board Submittal
+Activations - TEST - ONB,Change Board Submittal
+Activations - TEST - ONBv14,Change Board Submittal
+Activations - TEST - RECV10,Change Board Submittal
+Activations - TEST - RECV14,Change Board Submittal
+Activations - TEST - UTA,Change Board Submittal
+Activations - TEST - UTB,Change Board Submittal
+Activations - TEST - UTM/UET,Change Board Submittal
+Activations - TEST-WFM,Change Board Submittal
+Activations - UTA,Change Board Submittal
+Activations - UTB,Change Board Submittal
+Activations - UTE,Change Board Submittal
+Activations - UTM/UET,Change Board Submittal
+Activations - WFM,Change Board Submittal
+App owner - Application install,Change Board Submittal
+App owner - Application Maintenance,Change Board Submittal
+App owner - Application one-off,Change Board Submittal
+App owner - Application upgrade,Change Board Submittal
+App owner - Apply patch,Change Board Submittal
+App owner - Configuration change,Change Board Submittal
+App owner - Deploy package/cube,Change Board Submittal
+App owner - non-standard,Change Board Submittal
+B&D - CTE maintenance,Change Board Submittal
+B&D - PatchBuilder maintenance,Change Board Submittal
+B&D - TeamCity maintenance,Change Board Submittal
+B&D - WST maintenance,Change Board Submittal
+Cloud Engine - Artifactory Update,Change Board Submittal
+Cloud Engine - ELK Update,Change Board Submittal
+Cloud Engine - Grafana/Influx Update,Change Board Submittal
+Cloud Engine - MongoDB Managed Service Update,Change Board Submittal
+Cloud Engine - MySQL Managed Service Update,Change Board Submittal
+Cloud Engine - non-standard,Change Board Submittal
+Cloud Engine - PCF Update,Change Board Submittal
+Cloud Engine - RabbitMQ Managed Service Update,Change Board Submittal
+Cloud Engine - Redis Managed Service Update,Change Board Submittal
+Cloud Engine - Sensu Update,Change Board Submittal
+Cloud Engine - SPADE Update,Change Board Submittal
+Cloud Engine - TeamCity Update,Change Board Submittal
+COS - Application installation,Change Board Submittal
+COS - Apply patch,Change Board Submittal
+COS - Decommission,Change Board Submittal
+COS - HW maintenance,Change Board Submittal
+COS - non-standard,Change Board Submittal
+COS - Rack/stack/cable,Change Board Submittal
+COS - Recabling,Change Board Submittal
+DBA - Application changes,Change Board Submittal
+DBA - Configuration,Change Board Submittal
+DBA - Maintenance,Change Board Submittal
+DBA - non-standard,Change Board Submittal
+DBA - Security,Change Board Submittal
+DEV Legacy - AD: Adding DC,Change Board Submittal
+DEV Legacy - AD: Adding Users to Groups,Change Board Submittal
+DEV Legacy - AD: Creating ID's/Groups,Change Board Submittal
+DEV Legacy - AD: Modifying GPO's,Change Board Submittal
+DEV Legacy - AD: Rebooting DC,Change Board Submittal
+DEV Legacy - Adding DNS Server,Change Board Submittal
+DEV Legacy - Adding/Removeing Snapshots,Change Board Submittal
+DEV Legacy - Backup,Change Board Submittal
+DEV Legacy - Cluster Changes Add/Remove,Change Board Submittal
+DEV Legacy - Disposal,Change Board Submittal
+DEV Legacy - DNS: Adding Records,Change Board Submittal
+DEV Legacy - DNS: Removing Records,Change Board Submittal
+DEV Legacy - Drive Replacement,Change Board Submittal
+DEV Legacy - DRS/HA Changes,Change Board Submittal
+DEV Legacy - ESX: Adding Space to VM,Change Board Submittal
+DEV Legacy - ESX: Host Reimage if Clustered,Change Board Submittal
+DEV Legacy - ESX: Host Reimage if Standalone,Change Board Submittal
+DEV Legacy - ESX: New Host Build,Change Board Submittal
+DEV Legacy - ESX: Upgrading Host OS if Clusterd,Change Board Submittal
+DEV Legacy - F5: Add/Change of Servers (Pools),Change Board Submittal
+DEV Legacy - F5: Certificate Additions/Changes,Change Board Submittal
+DEV Legacy - F5: Certificate/Profile Change,Change Board Submittal
+DEV Legacy - F5: Creating VIP's,Change Board Submittal
+DEV Legacy - F5: Firmware Change/Upgrade,Change Board Submittal
+DEV Legacy - F5: Physical Network Changes,Change Board Submittal
+DEV Legacy - F5: VLAN Additions,Change Board Submittal
+DEV Legacy - Firewall: Adding Objects/Rules,Change Board Submittal
+DEV Legacy - Firewall: Installation,Change Board Submittal
+DEV Legacy - Firewall: Opening Ports,Change Board Submittal
+DEV Legacy - Migrating VM's Standalone Host,Change Board Submittal
+DEV Legacy - Network: Activating new ESX servers on network (enabling port),Change Board Submittal
+DEV Legacy - Network: Adding Nat's,Change Board Submittal
+DEV Legacy - Network: Adding/Replacing Switches,Change Board Submittal
+DEV Legacy - Network: Creating New VLANs/Ranges,Change Board Submittal
+DEV Legacy - Network: Firmware,Change Board Submittal
+DEV Legacy - Network: Installing Hardware and Cableing,Change Board Submittal
+DEV Legacy - Network: Internet Failover,Change Board Submittal
+DEV Legacy - Network: Modifying Aggregates,Change Board Submittal
+DEV Legacy - Network: Modifying Management Network (ports switches etc),Change Board Submittal
+DEV Legacy - Network: Modifying Ports for Hosts (disabled ports only),Change Board Submittal
+DEV Legacy - Network: Modifying Spanning Tree / Topology Changes,Change Board Submittal
+DEV Legacy - Network: Modifying Vswitch,Change Board Submittal
+DEV Legacy - Network: Trunking/Adding Vlans,Change Board Submittal
+DEV Legacy - New VM Build,Change Board Submittal
+DEV Legacy - non-standard,Change Board Submittal
+DEV Legacy - Patches,Change Board Submittal
+DEV Legacy - PSU Change,Change Board Submittal
+DEV Legacy - Racking and Cableing,Change Board Submittal
+DEV Legacy - Reboot Clustered Environment,Change Board Submittal
+DEV Legacy - Reboot Non-Clustered Environment,Change Board Submittal
+DEV Legacy - Rebooting Vcenter (Outside of Vcloud/Rcloud),Change Board Submittal
+DEV Legacy - SAN: Adding Shelves to Netapp,Change Board Submittal
+DEV Legacy - SAN: Adding Storage Node to SolidFire,Change Board Submittal
+DEV Legacy - SAN: Building Volumes/LUNs,Change Board Submittal
+DEV Legacy - SAN: Creating Shares,Change Board Submittal
+DEV Legacy - SAN: Creating Snapshots,Change Board Submittal
+DEV Legacy - SAN: Installing/Configuring a new SAN,Change Board Submittal
+DEV Legacy - SAN: Migrating Drives on Netapp,Change Board Submittal
+DEV Legacy - SAN: Presenting Storage to Hosts,Change Board Submittal
+DEV Legacy - SAN: Replacing Physical Drive HotSpare in SAN,Change Board Submittal
+DEV Legacy - Server Parts Changes Outside of Drive/PSU Clustered,Change Board Submittal
+DEV Legacy - Server Parts Changes Outside of Drive/PSU Standalone,Change Board Submittal
+DEV Legacy - Software Install,Change Board Submittal
+DEV Legacy - Updating Templates,Change Board Submittal
+DEV Legacy - Upgrading Host OS if Standalone,Change Board Submittal
+DEV Legacy - User acces to applications (e.g. Subversion GIT Vcloud),Change Board Submittal
+DEV Legacy - Virtual Mem/CPU,Change Board Submittal
+DEV Legacy - VM Reimage,Change Board Submittal
+DEV Legacy - Vmotion,Change Board Submittal
+DEV Rcloud - non-standard,Change Board Submittal
+DEV Rcloud - Rebooting Vcenter for Rcloud,Change Board Submittal
+DEV Vcloud - Catalog Add,Change Board Submittal
+DEV Vcloud - Cosolidate Existing Catalog Image,Change Board Submittal
+DEV Vcloud - Cosolidate New Catalog Image,Change Board Submittal
+DEV Vcloud - ESX: Host Reimage Clustered,Change Board Submittal
+DEV Vcloud - ESX: New Host Build,Change Board Submittal
+DEV Vcloud - non-standard,Change Board Submittal
+DEV Vcloud - Rebooting Vcenter for Vcloud,Change Board Submittal
+DEV Vcloud - Vcloud Application Upgrade,Change Board Submittal
+DEV Vcloud - Vcloud Quota/ID Changes,Change Board Submittal
+DEV Vcloud - Vcloud Reboot,Change Board Submittal
+DEV Vcloud - VM Export,Change Board Submittal
+DEV Vcloud - VM Import,Change Board Submittal
+ITG - Site Update,Change Board Submittal
+Network - Add,Change Board Submittal
+Network - Change,Change Board Submittal
+Network - Decommission,Change Board Submittal
+Network - Delete,Change Board Submittal
+Network - DNS change,Change Board Submittal
+Network - Failover node,Change Board Submittal
+Network - Hardware upgrade,Change Board Submittal
+Network - Informational,Change Board Submittal
+Network - Install virtual FW,Change Board Submittal
+Network - IP Block,Change Board Submittal
+Network - non-standard,Change Board Submittal
+Network - OS upgrade,Change Board Submittal
+Network - Port Opening,Change Board Submittal
+Network - Provisioning,Change Board Submittal
+Network - VPN Change,Change Board Submittal
+Network - URL Creation,Change Board Submittal
+Rcloud - Rcloud maintenance,Change Board Submittal
+SAN - Maintenance,Change Board Submittal
+SAN - non-standard,Change Board Submittal
+SAN - Provisioning,Change Board Submittal
+Security - Assessment,Change Board Submittal
+Security - Configuration,Change Board Submittal
+Security - Encryption,Change Board Submittal
+Security - Incident,Change Board Submittal
+Security - Maintenance,Change Board Submittal
+Server - AD related,Change Board Submittal
+Server - Add,Change Board Submittal
+Server - Application Installation,Change Board Submittal
+Server - Apply Patch (hardware),Change Board Submittal
+Server - Apply patch (software),Change Board Submittal
+Server - Configuration change,Change Board Submittal
+Server - CPU upgrade,Change Board Submittal
+Server - Decommission,Change Board Submittal
+Server - Decommission initial task,Change Board Submittal
+Server - DNS change,Change Board Submittal
+Server - Drive expansion,Change Board Submittal
+Server - Failover,Change Board Submittal
+Server - Hardware downgrade/delete,Change Board Submittal
+Server - Maintenance,Change Board Submittal
+Server - Move,Change Board Submittal
+Server - non-standard,Change Board Submittal
+Server - RAM upgrade,Change Board Submittal
+Server - Reboot,Change Board Submittal
+Ucloud - Add Compute Capacity,Change Board Submittal
+Ucloud - Configuration change,Change Board Submittal
+Ucloud - Network maintenance,Change Board Submittal
+Ucloud - New device setup,Change Board Submittal
+Ucloud - non-standard,Change Board Submittal
+Ucloud - OpenStack refresh,Change Board Submittal
+Ucloud - Server maintenance,Change Board Submittal
+UCN - Configuration Changes,Change Board Submittal
+UCN - Global FTP Password Changes,Change Board Submittal
+UCN - Install,Change Board Submittal
+UCN - non-standard,Change Board Submittal
+UCN - One-off,Change Board Submittal
+UCN - Upgrade,Change Board Submittal
+WST - Site Update,Change Board Submittal
